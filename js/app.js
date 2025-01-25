@@ -27,3 +27,7 @@ function verificaQtdeJogosAlugados() {
     console.log(`Há ${contador} ${mensagem}.`);
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    verificaQtdeJogosAlugados();
+});
+
