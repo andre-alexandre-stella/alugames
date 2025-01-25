@@ -1,7 +1,7 @@
-function alterarStatus(game) {
-    let idGame = `#game-${game}`;
-    let botaoGame = document.querySelector(`${idGame} a`);
-    let imagemGame = document.querySelector(`${idGame} div`);
+function alterarStatus(id) {
+    let gameClicado = document.getElementById(`game-${id}`);
+    let botaoGame = gameClicado.querySelector(".dashboard__item__button");
+    let imagemGame = gameClicado.querySelector(".dashboard__item__img");
 
     if (botaoGame.textContent == "Alugar") {
         botaoGame.textContent = "Devolver";
